@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="chemistry, atoms, quiz, molecules, knowledge"
+    />
+    <meta
+      name="description"
+      content="This simple quiz will test your knowledge about basic chemistry"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/molecule.png" />
+    <script src="script.js" defer></script>
+    <title>Basic Chemistry Quiz</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="molecule-top"></div>
+
+      <main class="main">
+        <div class="start-screen section-container">
+          <h1 class="main-title">HOW GOOD IS YOUR CHEMISTRY KNOWLEDGE?</h1>
+          <h3 class="challenge-text">Take this quiz and find out.</h3>
+          <button class="btn start-button">START</button>
+        </div>
+
+        <div class="section-container name-screen hidden">
+          <h2 class="name-question">
+            Before we start, how should we call you?
+          </h2>
+          <input
+            class="name-input"
+            type="text"
+            placeholder="Type your name here..."
+            maxlength="15"
+          />
+          <span class="name-error-message hidden"
+            >Your name should have at least 1 character</span
+          >
+          <button class="btn name-button">next</button>
+        </div>
+
+        <div class="section-container question-container question--1 hidden">
+          <div class="question-number">Question 1/15</div>
+          <form action="GET" class="question-form-container">
+            <label for="answers" class="question-text"
+              >Chemistry is a science that studies:</label
+            >
+            <ul id="answers">
+              <li class="answer-option" data-question-number="0">
+                Structure, properties, composition and humidity of matter
+              </li>
+              <li class="answer-option" data-question-number="0">
+                Structure, properties, composition and transformation of matter
+              </li>
+              <li class="answer-option" data-question-number="0">
+                Structure, composition and transformation of matter
+              </li>
+              <li class="answer-option" data-question-number="0">
+                Structure, properties, extensibility and transformation of
+                matter
+              </li>
+            </ul>
+          </form>
+          <span class="answer-error-message hidden"
+            >Your should pick one answer
+          </span>
+          <div class="btns-container">
+            <button class="btn previous-button">previous</button>
+            <button class="btn next-button" data-submit-answer="0">next</button>
+          </div>
+        </div>
+
+        <div class="section-container question-container question--2 hidden">
+          <div class="question-number">Question 2/15</div>
+          <form action="GET" class="question-form-container">
+            <label for="answers" class="question-text">What is matter?</label>
+            <ul id="answers">
+              <li class="answer-option" data-question-number="1">
+                Everything that takes up space and time
+              </li>
+              <li class="answer-option" data-question-number="1">
+                Everything that takes up space and has mass
+              </li>
+              <li class="answer-option" data-question-number="1">
+                Everything that is inside of space
+              </li>
+              <li class="answer-option" data-question-number="1">
+                Every solid things in Universe
+              </li>
+            </ul>
+          </form>
+          <span class="answer-error-message hidden"
+            >Your should pick one answer
+          </span>
+          <div class="btns-container">
+            <button class="btn previous-button">previous</button>
+            <button class="btn next-button" data-submit-answer="1">next</button>
+          </div>
+        </div>
+
+        <div class="section-container question-container question--3 hidden">
+          <div class="question-number">Question 3/15</div>
+          <form action="GET" class="question-form-container">
+            <label for="answers" class="question-text"
+              >Atom is electrically:</label
+            >
+            <ul id="answers">
+              <li class="answer-option" data-question-number="2">Neutral</li>
+              <li class="answer-option" data-question-number="2">Positive</li>
+              <li class="answer-option" data-question-number="2">Negative</li>
+            </ul>
+          </form>
+          <span class="answer-error-message hidden"
+            >Your should pick one answer
+          </span>
+          <div class="btns-container">
+            <button class="btn previous-button">previous</button>
+            <button class="btn next-button" data-submit-answer="2">next</button>
+          </div>
+        </div>
+
+        <div class="section-container question-container question--4 hidden">
+          <div class="question-number">Question 4/15</div>
+          <form action="GET" class="question-form-container">
+            <label for="answers" class="question-text"
+              >Matter can be broken down into two categories:</label
+            >
+            <ul id="answers">
+              <li class="answer-option" data-question-number="3">
+                Elements and compounds
+              </li>
+              <li class="answer-option" data-question-number="3">
+                Pure substances and mixtures
+              </li>
+              <li class="answer-option" data-question-number="3">
+                Into their original components
+              </li>
+            </ul>
+          </form>
+          <span class="answer-error-message hidden"
+            >Your should pick one answer
+          </span>
+          <div class="btns-container">
+            <button class="btn previous-button">previous</button>
+            <button class="btn next-button" data-submit-answer="3">next</button>
+          </div>
+        </div>
+
+        <div class="section-container question-container question--5 hidden">
+          <div class="question-number">Question 5/15</div>
+          <form action="GET" class="question-form-container">
+            <label for="answers" class="question-text"
+              >An element is a material that consists of how many types of
+              atoms?</label
+            >
+            <ul id="answers">
+              <li class="answer-option" data-question-number="4">
+                Elements has no atoms
+              </li>
+              <li class="answer-option" data-question-number="4">Two</li>
+              <li class="answer-option" data-question-number="4">One</li>
+            </ul>
+          </form>
+          <span class="answer-error-message hidden"
+            >Your should pick one answer
+          </span>
+          <div class="btns-container">
+            <button class="btn previous-button">previous</button>
+            <button class="btn next-button" data-submit-answer="4">next</button>
+          </div>
+        </div>
+
+        <div class="section-container question-container question--6 hidden">
+          <div class="question-number">Question 6/15</div>
+          <form action="GET" class="question-form-container">
+            <label for="answers" class="question-text"
+              >Which properties all matter has?</label
+            >
+            <ul id="answers">
+              <li class="answer-option" data-question-number="5">
+                Physical and chemical properties
+              </li>
+              <li class="answer-option" data-question-number="5">
+                Chemical and electrical properties
+              </li>
+              <li class="answer-option" data-question-number="5">
+                Physical, chemical and electrical properties
+              </li>
+            </ul>
+          </form>
+          <span class="answer-error-message hidden"
+            >Your should pick one answer
+          </span>
+          <div class="btns-container">
+            <button class="btn previous-button">previous</button>
+            <button class="btn next-button" data-submit-answer="5">next</button>
+          </div>
+        </div>
+
+        <div class="section-container question-container question--7 hidden">
+          <div class="question-number">Question 7/15</div>
+          <form action="GET" class="question-form-container">
+            <label for="answers" class="question-text"
+              >What are the natural states of matter?</label
+            >
+            <ul id="answers">
+              <li class="answer-option" data-question-number="6">
+                Solids, liquids and gases
+              </li>
+              <li class="answer-option" data-question-number="6">
+                Solids, liquids, gases and plasma
+              </li>
+              <li class="answer-option" data-question-number="6">
+                Solids and liquids
+              </li>
+            </ul>
+          </form>
+          <span class="answer-error-message hidden"
+            >Your should pick one answer
+          </span>
+          <div class="btns-container">
+            <button class="btn previous-button">previous</button>
+            <button class="btn next-button" data-submit-answer="6">next</button>
+          </div>
+        </div>
+
+        <div class="section-container question-container question--8 hidden">
+          <div class="question-number">Question 8/15</div>
+          <form action="GET" class="question-form-container">
+            <label for="answers" class="question-text"
+              >What is sublimation?</label
+            >
+            <ul id="answers">
+              <li class="answer-option" data-question-number="7">
+                Transition of a substance directly from the solid to the gas
+                state, without passing through the liquid state
+              </li>
+              <li class="answer-option" data-question-number="7">
+                Transition of a substance directly from the gas to the solid
+                state, without passing through the liquid state
+              </li>
+              <li class="answer-option" data-question-number="7">
+                Transition of a substance from one state to another
+              </li>
+            </ul>
+          </form>
+          <span class="answer-error-message hidden"
+            >Your should pick one answer
+          </span>
+          <div class="btns-container">
+            <button class="btn previous-button">previous</button>
+            <button class="btn next-button" data-submit-answer="7">next</button>
+          </div>
+        </div>
+
+        <div class="section-container question-container question--9 hidden">
+          <div class="question-number">Question 9/15</div>
+          <form action="GET" class="question-form-container">
+            <label for="answers" class="question-text"
+              >What is distillation?</label
+            >
+            <ul id="answers">
+              <li class="answer-option" data-question-number="8">
+                The action of purifying a liquid by a process of mining
+              </li>
+              <li class="answer-option" data-question-number="8">
+                The action of purifying a liquid by a process of burning
+              </li>
+              <li class="answer-option" data-question-number="8">
+                The action of purifying a liquid by a process of heating and
+                cooling
+              </li>
+            </ul>
+          </form>
+          <span class="answer-error-message hidden"
+            >Your should pick one answer
+          </span>
+          <div class="btns-container">
+            <button class="btn previous-button">previous</button>
+            <button class="btn next-button" data-submit-answer="8">next</button>
+          </div>
+        </div>
+
+        <div class="section-container question-container question--10 hidden">
+          <div class="question-number">Question 10/15</div>
+          <form action="GET" class="question-form-container">
+            <label for="answers" class="question-text"
+              >Chemical change is:</label
+            >
+            <ul id="answers">
+              <li class="answer-option" data-question-number="9">
+                Evaporation of water from the glass
+              </li>
+              <li class="answer-option" data-question-number="9">
+                Burning of magnesium
+              </li>
+              <li class="answer-option" data-question-number="9">
+                Melting of iron
+              </li>
+              <li class="answer-option" data-question-number="9">
+                Iodine sublimation
+              </li>
+            </ul>
+          </form>
+          <span class="answer-error-message hidden"
+            >Your should pick one answer
+          </span>
+          <div class="btns-container">
+            <button class="btn previous-button">previous</button>
+            <button class="btn next-button" data-submit-answer="9">next</button>
+          </div>
+        </div>
+
+        <div class="section-container question-container question--11 hidden">
+          <div class="question-number">Question 11/15</div>
+          <form action="GET" class="question-form-container">
+            <label for="answers" class="question-text"
+              >Who proposed the word atom?</label
+            >
+            <ul id="answers">
+              <li class="answer-option" data-question-number="10">
+                Sigmund Freud
+              </li>
+              <li class="answer-option" data-question-number="10">
+                James Thomson
+              </li>
+              <li class="answer-option" data-question-number="10">Leucippus</li>
+              <li class="answer-option" data-question-number="10">
+                John Dalton
+              </li>
+              <li class="answer-option" data-question-number="10">
+                Democritus
+              </li>
+            </ul>
+          </form>
+          <span class="answer-error-message hidden"
+            >Your should pick one answer
+          </span>
+          <div class="btns-container">
+            <button class="btn previous-button">previous</button>
+            <button class="btn next-button" data-submit-answer="10">
+              next
+            </button>
+          </div>
+        </div>
+
+        <div class="section-container question-container question--12 hidden">
+          <div class="question-number">Question 12/15</div>
+          <form action="GET" class="question-form-container">
+            <label for="answers" class="question-text">Atoms consist of:</label>
+            <ul id="answers">
+              <li class="answer-option" data-question-number="11">
+                Protons, neutrons and electrons
+              </li>
+              <li class="answer-option" data-question-number="11">
+                Protons and electrons
+              </li>
+              <li class="answer-option" data-question-number="11">
+                Neutrons and electrons
+              </li>
+            </ul>
+          </form>
+          <span class="answer-error-message hidden"
+            >Your should pick one answer
+          </span>
+          <div class="btns-container">
+            <button class="btn previous-button">previous</button>
+            <button class="btn next-button" data-submit-answer="11">
+              next
+            </button>
+          </div>
+        </div>
+
+        <div class="section-container question-container question--13 hidden">
+          <div class="question-number">Question 13/15</div>
+          <form action="GET" class="question-form-container">
+            <label for="answers" class="question-text"
+              >What are proteins made of?</label
+            >
+            <ul id="answers">
+              <li class="answer-option" data-question-number="12">
+                Carbon, Hydrogen and Oxygen
+              </li>
+              <li class="answer-option" data-question-number="12">
+                Carbon, Oxygen and Nitrogen
+              </li>
+              <li class="answer-option" data-question-number="12">
+                Carbon, Hydrogen, Oxygen and Nitrogen
+              </li>
+              <li class="answer-option" data-question-number="12">
+                Carbon, Hydrogen and Nitrogen
+              </li>
+            </ul>
+          </form>
+          <span class="answer-error-message hidden"
+            >Your should pick one answer
+          </span>
+          <div class="btns-container">
+            <button class="btn previous-button">previous</button>
+            <button class="btn next-button" data-submit-answer="12">
+              next
+            </button>
+          </div>
+        </div>
+
+        <div class="section-container question-container question--14 hidden">
+          <div class="question-number">Question 14/15</div>
+          <form action="GET" class="question-form-container">
+            <label for="answers" class="question-text"
+              >What is the general formula for a carbohydrate?</label
+            >
+            <ul id="answers">
+              <li class="answer-option" data-question-number="13">CH3O2</li>
+              <li class="answer-option" data-question-number="13">CH2O</li>
+              <li class="answer-option" data-question-number="13">CH2O2</li>
+              <li class="answer-option" data-question-number="13">CH3O</li>
+            </ul>
+          </form>
+          <span class="answer-error-message hidden"
+            >Your should pick one answer
+          </span>
+          <div class="btns-container">
+            <button class="btn previous-button">previous</button>
+            <button class="btn next-button" data-submit-answer="13">
+              next
+            </button>
+          </div>
+        </div>
+
+        <div class="section-container question-container question--15 hidden">
+          <div class="question-number">Question 15/15</div>
+          <form action="GET" class="question-form-container">
+            <label for="answers" class="question-text"
+              >What is symbol for Chlorine?</label
+            >
+            <ul id="answers">
+              <li class="answer-option" data-question-number="14">CI</li>
+              <li class="answer-option" data-question-number="14">CHL</li>
+              <li class="answer-option" data-question-number="14">CL</li>
+              <li class="answer-option" data-question-number="14">CE</li>
+            </ul>
+          </form>
+          <span class="answer-error-message hidden"
+            >Your should pick one answer
+          </span>
+          <div class="btns-container">
+            <button class="btn previous-button">previous</button>
+            <button class="btn next-button" data-submit-answer="14">
+              next
+            </button>
+          </div>
+        </div>
+
+        <div class="section-container finishing-screen hidden">
+          <div class="finishig-sign">Finishing...</div>
+
+          <h2 class="finishing-title">You have finished the quiz, Duje.</h2>
+
+          <p class="finishing-text">
+            You can go back and review your answers or submit the answers by
+            clicking the Submit button bellow.
+          </p>
+
+          <div class="btns-container">
+            <button class="btn previous-button">previous</button>
+            <button class="btn submit-button">submit</button>
+          </div>
+        </div>
+
+        <div class="section-container results-screen hidden">
+          <div class="result-sign">Results</div>
+
+          <h2 class="result-title">Duje, your score is:</h2>
+
+          <span class="score-text">33/35</span>
+
+          <div class="wrong-and-correct-answers hidden">
+            <h3 class="result-not-knowing-text">You didn't know:</h3>
+          </div>
+
+          <div class="result-message-container">
+            <h2 class="congrat"></h2>
+
+            <div class="container-image"></div>
+
+            <p class="message-text"></p>
+          </div>
+        </div>
+      </main>
+
+      <div class="molecule-left">
+        <img
+          src="images/molecule.png"
+          alt="Molecule left"
+          class="molecule-left-img"
+        />
+      </div>
+      <div class="molecule-bottom">
+        <img
+          src="images/molecule_token.png"
+          alt="Molecule bottom"
+          class="molecule-bottom-img"
+        />
+      </div>
+      <div class="molecule-right">
+        <img
+          src="images/molecule-structure.png"
+          alt="Molecule right"
+          class="molecule-right-img"
+        />
+      </div>
+    </div>
+  </body>
+</html>
