@@ -130,16 +130,19 @@ function resultMessageRender(score, userName) {
     congratEl.classList.add("bad-score");
     imageContainer.style.backgroundImage = "url(images/bad-chemist.jpg)";
     messageTextEl.textContent = `The lab wouldn't survive your explosion, ${userName}!`;
-  } else if (score < 13) {
+    messageTextEl.classList.add("bad-score");
+  } else if (score < 12) {
     congratEl.textContent = `Not bad, but it could've been better, ${userName}!`;
     congratEl.classList.add("moderate-score");
     imageContainer.style.backgroundImage = "url(images/study-more.jfif)";
     messageTextEl.textContent = `You should study some more, ${userName}!`;
+    messageTextEl.classList.add("moderate-score");
   } else {
     congratEl.textContent = `Well done, ${userName}!`;
     congratEl.classList.add("good-score");
     imageContainer.style.backgroundImage = "url(images/happy-teacher.jpg)";
     messageTextEl.textContent = `Your Junior School teacher would be proud, ${userName}!`;
+    messageTextEl.classList.add("good-score");
   }
 }
 
@@ -155,6 +158,9 @@ nameBtn.addEventListener("click", () => {
     document.querySelector(".name-screen").classList.add("hidden");
     document.querySelector(".question--1").classList.remove("hidden");
     document.querySelector(".name-error-message").classList.add("hidden");
+    document.querySelector(
+      ".finishing-title"
+    ).textContent = `You have finished the quiz, ${userName}.`;
   }
   document.querySelector(".name-input").value = "";
 });
@@ -196,6 +202,11 @@ main.addEventListener("click", (e) => {
     e.target
       .closest(".section-container")
       .nextElementSibling.classList.remove("hidden");
+
+    // Result title
+    document.querySelector(
+      ".result-title"
+    ).textContent = `${userName}, your score is:`;
 
     // Calculate score
     calcScore(givenAnswers, correctAnswers);
